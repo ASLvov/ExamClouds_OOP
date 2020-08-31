@@ -1,6 +1,6 @@
 package exercise11;
 
-public class Shape {
+abstract class Shape {
     String color;
 
     public Shape(String color) {
@@ -19,9 +19,7 @@ public class Shape {
         this.color = color;
     }
 
-    public void draw() {
-        System.out.println(this.color + " фигура");
-    }
+    public abstract void draw();
 
     public boolean equals(Shape shape) {
         if (this.color == shape.getColor())

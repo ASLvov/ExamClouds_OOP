@@ -6,8 +6,7 @@ public class Exercise11 {
         int[][] arrayRectangle = new int[2][10];
         Circle circle = new Circle(arrayCircle, "Красный");
         Rectangle rectangle = new Rectangle(arrayRectangle, "Синий");
-        Shape shape = new Shape("Жёлтая");
-        Shape[] shapes = {circle, rectangle, shape};
+        Shape[] shapes = {circle, rectangle};
         for (Shape s : shapes)
             s.draw();
         Circle circle1 = new Circle(arrayCircle, "Коричневый");
